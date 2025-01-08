@@ -2,112 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samuel Araujo - Researcher & Professor</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            color: #333;
-        }
-
-        header {
-            background-color: #003366;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-
-        header p {
-            margin: 0.5rem 0 0;
-            font-size: 1.2rem;
-        }
-
-        .container {
-            width: 90%;
-            margin: 0 auto;
-            max-width: 1200px;
-        }
-
-        .section {
-            margin: 2rem 0;
-        }
-
-        .section h2 {
-            color: #003366;
-            border-bottom: 2px solid #003366;
-            padding-bottom: 0.5rem;
-        }
-
-        .info {
-            padding: 1rem;
-            background: #f4f4f4;
-            border-radius: 8px;
-            margin: 1rem 0;
-        }
-
-        .info p {
-            margin: 0.5rem 0;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 0.75rem 1.5rem;
-            background-color: #003366;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 8px;
-            font-size: 1rem;
-        }
-
-        .button:hover {
-            background-color: #0055cc;
-        }
-
-        footer {
-            background-color: #003366;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
-        }
-
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2rem;
-            }
-
-            .section h2 {
-                font-size: 1.5rem;
-            }
-
-            .info p {
-                font-size: 0.9rem;
-            }
-        }
-    </style>
+    
 </head>
 <body>
     <header>
-        <h1>Samuel Araujo</h1>
-        <p>Graph Theory Researcher | Professor | PhD Candidate</p>
+        <div>
+            <h1>Samuel Nascimento de Araújo</h1>
+            <p> Researcher | Professor | PhD Student</p>
+        </div>
+        <div class="nav-container">
+            <nav>
+                <ul class="menu">
+                    <li><a href="#personal-info">About Me</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#publications">Research</a></li>
+                    <li><a href="#interests">Personal Interests</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <div class="container">
         <!-- Personal Information -->
         <div class="section" id="personal-info">
-            <h2>Personal Information</h2>
-            <div class="info">
-                <p><strong>Birth Date:</strong> March 08, 1991</p>
-                <p><strong>Country:</strong> Brazil</p>
-                <p><strong>Email:</strong> sammueln@gmail.com</p>
+            <div>
+                <h2>About Me</h2>
+            </div>
+            <div class="info-container">
+                <div class="info">
+                    <div class="text">
+                        I am Samuel N. Araújo, professor at the Federal Institute of Education, Science, and Technology of Ceará (IFCE), as well as a researcher and Phd student from Brazil. Currently, I am residing in France until November 2025, where I am collaborating with the Inria (National Institute for Research in Computer Science and Automation) at Université Côte d’Azur in Valbonne.
+                    </div>
+                        <p><p><p><p><strong>Birth Date:</strong> March 08, 1991</p>
+                        <p><strong>Country:</strong> Brazil</p>
+                        <p><strong>Personal Email:</strong> sammueln@gmail.com</p>
+                </div>
+            
+                <div>
+                    <img src="figs/me.png" alt="logos">
+                </div>
             </div>
         </div>
 
@@ -115,6 +50,10 @@
         <div class="section" id="education">
             <h2>Education</h2>
             <div class="info">
+                <p><strong>2024 – Present:</strong> PhD exchange program<br>
+                Inria (National Institute for Research in Computer Science and Automation), Valbonne, France<br>
+                Supervisor: Nicolas Nisse</p>
+
                 <p><strong>2023 – Present:</strong> PhD in Computer Science<br>
                 Universidade Federal do Ceará, Brazil<br>
                 Advisor: Rudini Menezes Sampaio</p>
@@ -129,72 +68,98 @@
                 <p><strong>2009 – 2014:</strong> Bachelorship in Computing<br>
                 Universidade Federal do Ceará, Brazil</p>
             </div>
+            <div>
+                <img src="figs/logos.png" alt="logos">
+            </div>
         </div>
 
         <!-- Publications -->
         <div class="section" id="publications">
             <h2>Publications</h2>
             <div class="info">
-                <p>Details on published research works can be shared upon request or made available in the future.</p>
-            </div>
+            <script src="https://bibbase.org/show?bib=https://bibbase.org/f/964yB9FokgnpKrFd8/araujosn.bib&jsonp=1&noTitleLinks=true"></script> 
+        </div>
         </div>
 
-        <!-- Personal Interests -->
         <div class="section" id="interests">
             <h2>Personal Interests</h2>
             <div class="info">
-                <p>Board Games, Photography, Family Travels</p>
+                <div class="interest">
+                    <span>Board Games (or Any Game)</span>
+                    <div class="stars">
+                        <img src="figs/star-filled.png" alt="star" />
+                        <img src="figs/star-filled.png" alt="star" />
+                        <img src="figs/star-filled.png" alt="star" />
+                        <img src="figs/star-filled.png" alt="star" />
+                        <img src="figs/star-filled.png" alt="star" />
+                        <img src="figs/star-filled.png" alt="star" />
+                        <img src="figs/star-filled.png" alt="star" />
+                        <img src="figs/star-filled.png" alt="star" />
+                        <img src="figs/star-filled.png" alt="star" />
+                        <img src="figs/star-empty.png" alt="star" />
+                    </div>
+                </div>
+                <div class="interest">
+                    <span>Family</span>
+                    <div class="stars">
+                        <img src="figs/star-filled.png" alt="star" />
+                        <img src="figs/star-filled.png" alt="star" />
+                        <img src="figs/star-filled.png" alt="star" />
+                        <img src="figs/star-filled.png" alt="star" />
+                        <img src="figs/star-filled.png" alt="star" />
+                        <img src="figs/star-filled.png" alt="star" />
+                        <img src="figs/star-filled.png" alt="star" />
+                        <img src="figs/star-filled.png" alt="star" />
+                        <img src="figs/star-filled.png" alt="star" />
+                        <img src="figs/star-filled.png" alt="star" />
+                    </div>
+                </div>
+                <div class="interest">
+                    <span>Photography</span>
+                    <div class="stars">
+                        <img src="figs/star-filled.png" alt="star" />
+                        <img src="figs/star-filled.png" alt="star" />
+                        <img src="figs/star-filled.png" alt="star" />
+                        <img src="figs/star-filled.png" alt="star" />
+                        <img src="figs/star-filled.png" alt="star" />
+                        <img src="figs/star-filled.png" alt="star" />
+                        <img src="figs/star-filled.png" alt="star" />
+                        <img src="figs/star-empty.png" alt="star" />
+                        <img src="figs/star-empty.png" alt="star" />
+                        <img src="figs/star-empty.png" alt="star" />
+                    </div>
+                </div>
+                <div class="interest">
+                    <span>Travels</span>
+                    <div class="stars">
+                        <img src="figs/star-filled.png" alt="star" />
+                        <img src="figs/star-filled.png" alt="star" />
+                        <img src="figs/star-filled.png" alt="star" />
+                        <img src="figs/star-filled.png" alt="star" />
+                        <img src="figs/star-filled.png" alt="star" />
+                        <img src="figs/star-filled.png" alt="star" />
+                        <img src="figs/star-filled.png" alt="star" />
+                        <img src="figs/star-empty.png" alt="star" />
+                        <img src="figs/star-empty.png" alt="star" />
+                        <img src="figs/star-empty.png" alt="star" />
+                    </div>
+                </div>
             </div>
         </div>
+        
+        
 
         <!-- Contact Section -->
         <div class="section" id="contact">
             <h2>Contact Me</h2>
-            <a href="mailto:samuel.araujo@ifce.edu.br" class="button">Send me an Email</a>
+            <a href="mailto:samuel.araujo@ifce.edu.br" class="button">Send an Email</a>
         </div>
     </div>
 
     <footer>
         <p>&copy; 2025 Samuel Araujo | All Rights Reserved</p>
     </footer>
-
-    <script>
-        // Highlight current section on scroll
-        document.addEventListener('DOMContentLoaded', () => {
-            const sections = document.querySelectorAll('.section');
-            const options = {
-                root: null,
-                threshold: 0.1,
-            };
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    const id = entry.target.id;
-                    if (entry.isIntersecting) {
-                        document.querySelectorAll('header nav a').forEach(link => {
-                            if (link.getAttribute('href') === `#${id}`) {
-                                link.classList.add('active');
-                            } else {
-                                link.classList.remove('active');
-                            }
-                        });
-                    }
-                });
-            }, options);
-
-            sections.forEach(section => observer.observe(section));
-        });
-
-        // Smooth scroll to sections
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <link rel="stylesheet" href="personal.css">
+    <script src="personal_script.js"></script>
 </body>
 </html>

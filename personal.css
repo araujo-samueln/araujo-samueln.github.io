@@ -1,0 +1,425 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    position: relative; 
+    background-color: #003366;
+    color: #fff;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+header h1 {
+    margin: 10px;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 10px;
+    margin-top: -15px;
+    font-size: 1.2rem;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* General Section Styling */
+.section {
+    position: relative;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+}
+
+.section personal-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Section Heading */
+.section h2 {
+    flex-basis: 100%;
+    font-family: 'Georgia', serif;
+    font-size: 1.8rem;
+    color: #003366;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 0.5rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Bottom-Right Image Styling */
+#education img {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    max-width: 550px; /* Adjust size as needed */
+}
+
+
+.info-container{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+ }
+
+/* Bottom-Right Image Styling */
+#personal-info img {
+    max-width: 300px; /* Adjust size as needed */
+    flex: 1; /* Adjusts image size proportionally */
+    height: auto;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+/* Bottom-Right Image Styling */
+#personal-info h2 {
+    max-width: 100%;
+}
+
+#contact{
+    text-align: center;
+}
+
+/* Hover Effect for Professional Look */
+.section:hover {
+    border-color: #003366;
+    box-shadow: 0 4px 8px rgba(0, 115, 230, 0.2);
+}
+
+/* Layout Enhancements */
+.info {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.info p:first-line {
+    font-weight: 600;
+    font-style: italic;
+}
+
+.text {
+    text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Info Section */
+.info p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0.2rem 0;
+}
+
+/* Highlight for Key Information */
+.info p strong {
+    color: #003366;
+    font-weight: bold;
+    top: 100px;
+}
+
+/* Institution Name Styling */
+.info p br + br {
+    line-height: 2;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #003366;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.button:hover {
+    background-color: #0055cc;
+    
+}
+
+footer {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+
+/* Interest Item Styling */
+.interest {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 1rem;
+}
+
+.interest span {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Star Image Styling */
+.stars {
+    display: flex;
+    gap: 2px;
+}
+
+.stars img {
+    width: 18px;
+    height: 18px;
+}
+
+/* Optional: Hover effect for stars */
+.stars img:hover {
+    opacity: 0.7;
+}
+
+
+
+/* Navigation Container */
+.nav-container {
+    position: absolute; /* Position relative to the header */
+    bottom: 0px;
+    right: 1px;
+    padding: 0;
+    border-radius: 8px;
+}
+
+/* Navigation Menu */
+nav .menu {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 0px;
+}
+
+nav .menu li {
+    margin: 0;
+}
+
+/* Tab Links */
+nav .menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 8px 8px 0 0; /* Rounded top corners for the tabs */
+    background-color: #014078;
+    border: 1px solid #ffffff; /* Adjust border to match hover color */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effect for Tabs */
+nav .menu a:hover {
+    background-color: #ffffff; /* Active tab background */
+    color: #005bb5; /* Active tab text color */
+    font-weight: bold;
+    position: relative;
+    bottom: 2px; /* Slight lift for the active tab */
+    
+    border: 1px solid #ffffff; /* Adjust border to match hover color */
+    border-bottom: 2px solid #ffffff; /* Maintain bottom border consistency */
+}
+
+/* Add a sticky navigation bar on scroll */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 7px 0;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column; /* Stacks content vertically on small screens */
+        align-items: center; /* Centers the image and text */
+    }
+
+    .section > div:last-child img {
+        max-width: 70%; /* Scales down the image on smaller screens */
+    }
+}
+
+
+
+
+
+
+/* ========================  BIBBASE =========================== */
+
+div[style="float: right; margin-right: 10px; margin-top: 10px; text-align: right; font-size: 12px"] {
+    display: none;
+}
+
+#bibbase_header {
+    display: none;
+}
+
+
+.bibbase_body {
+    position: relative;
+    margin: 2rem;
+  }
+  
+  #bibbase_header a {
+      text-decoration: none;
+  }
+  
+  #bibbase_header i {
+      width: 16px;
+      text-align: center;
+      margin-right: 5px;
+  }
+  
+  .bibbase_group:before {
+      border-top: 2px solid #0070ba;
+      content: '';
+      display: table-cell;
+      position: relative;
+      top: 0.5em;
+      flex: auto;
+      margin-right: 0;
+  }
+  
+  .bibbase_group:after {
+      border-top: 2px solid #0070ba;
+      content: '';
+      display: table-cell;
+      position: relative;
+      top: 0.5em;
+      flex: auto;
+      margin-left: 0.25em;
+  }
+  
+  .bibbase_group {
+    color: #0070ba;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    text-align: center;
+    /* display: table; */
+    /* width: 100%; */
+  
+    display: flex;
+    flex-direction: row;
+    line-height: 1.0em;
+  }
+  
+  .bibbase_group_count {
+    display: none;
+  }
+  
+  .bibbase_group_head_icon {
+    display: none;
+  }
+  
+  .bibbase_group_body {
+    line-height: 1.3em;
+  }
+  
+  
+  .bibbase_paper {
+    margin-bottom: 1rem !important;
+  }
+  
+  img.bibbase_icon {
+      width: 20px;
+      max-height: 16px;
+      vertical-align: text-top;
+  
+  
+      filter: url("data:image/svg+xml;utf8,<svg%20xmlns='http://www.w3.org/2000/svg'><filter%20id='grayscale'><feColorMatrix%20type='matrix'%20values='0.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200%200%200%201%200'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+      filter: grayscale(100%); /* Current draft standard */
+      -webkit-filter: grayscale(100%); /* New WebKit */
+      -moz-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+      filter: gray; /* IE6+ */
+  }
+  
+  img.bibbase_icon:hover {
+      filter: none;
+      -webkit-filter: grayscale(0);
+  }
+  
+  
+  
+   span.bibbase_icon_text {     
+       display: none; 
+   } 
+  
+  .bibbase_code {
+      width: 80%
+  }
+  
+  .comment {
+      font-size: smaller;
+      font-style: italic;
+      color: gray;
+  }
+  
+  .recommended {
+      color: green;
+  }
+  
+  /* bootstrap */
+  
+  .bibbase_msg {
+      text-align: center;
+      width: 80%;
+      margin: auto;
+  }
+  
+  #bibbase_embed_modal {
+      width: 70%;
+      left: 15%;
+      margin: 0;
+  }
+  
+  .bibbase.well {
+      margin: 20px;
+      overflow-wrap: break-word;
+  }
+  
+  .bibbase.link {
+      text-decoration: none;
+  }
+  
+  .bibbase_paper_content {
+      font-size: smaller;
+  }
+  
+  br.bibbase_paper_content {
+      display: none;
+  }
+  
+  
