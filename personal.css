@@ -265,21 +265,15 @@ nav {
     padding: 7px 0;
 }
 
-/* Adjust for smaller screens using media queries */
-@media (max-width: 850px) {
-    #education img {
-        display: none; /* Hide image on smaller screens */
-    }
-    .nav-container {
-        display: none; /* Hide navigation on smaller screens */
+/* Hide image and navigation on smaller screens */
+@media (max-width: 1000px) {
+    #education img, .nav-container {
+        display: none;
     }
 }
 
-@media (max-width: 400px) {
-    #education img {
-        display: none;
-    }
-    .nav-container {
+@media (max-width: 600px) {
+    #personal-info img {
         display: none;
     }
 }
