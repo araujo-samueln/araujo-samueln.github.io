@@ -66,18 +66,30 @@ header p {
 
 /* Bottom-Right Image Styling */
 #education img {
-    position: absolute;
-    bottom: 30px;
-    right: 30px;
-    max-width: 550px; /* Adjust size as needed */
+    max-width: 550px; /* Set maximum image width */
+    height: auto; /* Maintain aspect ratio */
+    flex-shrink: 0; /* Prevent image from shrinking */
+    margin-top: 15px;
+    margin-right: 50px;
 }
 
+.education-container{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+ }
 
 .info-container{
     display: flex;
     flex-direction: row;
     gap: 50px;
  }
+
+ #education{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
 /* Bottom-Right Image Styling */
 #personal-info img {
@@ -253,20 +265,22 @@ nav {
     padding: 7px 0;
 }
 
-
-
-
+/* Adjust for smaller screens using media queries */
 @media (max-width: 768px) {
-    .section {
-        flex-direction: column; /* Stacks content vertically on small screens */
-        align-items: center; /* Centers the image and text */
-    }
-
-    .section > div:last-child img {
-        max-width: 70%; /* Scales down the image on smaller screens */
+    #education img {
+        max-width: 300px; /* Smaller maximum size for tablets */
+        bottom: 10px; /* Adjust positioning */
+        right: 10px;
     }
 }
 
+@media (max-width: 480px) {
+    #education img {
+        max-width: 200px; /* Smaller size for mobile devices */
+        bottom: 5px; /* Adjust positioning */
+        right: 5px;
+    }
+}
 
 
 
