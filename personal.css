@@ -266,19 +266,21 @@ nav {
 }
 
 /* Adjust for smaller screens using media queries */
-@media (max-width: 768px) {
+@media (max-width: 850px) {
     #education img {
-        max-width: 300px; /* Smaller maximum size for tablets */
-        bottom: 10px; /* Adjust positioning */
-        right: 10px;
+        display: none; /* Hide image on smaller screens */
+    }
+    .nav-container {
+        display: none; /* Hide navigation on smaller screens */
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 400px) {
     #education img {
-        max-width: 200px; /* Smaller size for mobile devices */
-        bottom: 5px; /* Adjust positioning */
-        right: 5px;
+        display: none;
+    }
+    .nav-container {
+        display: none;
     }
 }
 
