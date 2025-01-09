@@ -270,11 +270,17 @@ nav {
     #education img, .nav-container {
         display: none;
     }
+    .info-container, .education-container{
+        gap: 0px;
+    }
 }
 
 @media (max-width: 600px) {
     #personal-info img {
         display: none;
+    }
+    .info-container, .education-container{
+        gap: 0px;
     }
 }
 
